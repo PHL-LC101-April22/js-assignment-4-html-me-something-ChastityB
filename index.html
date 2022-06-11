@@ -1,8 +1,67 @@
 <!DOCTYPE html>
-<html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>My Side Projects</title>
+</head>
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li>
+               <a href="#movies" class="link">How To Make The Best Movies</a>
+            </li>
+            <li>
+               <a href="#strokes" class="link">Stroke Predictions Dataset</a>
+            </li>
+            <li>
+               <a href="#personal" class="link">Personal Website</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <article>
+         <h1 id="mainHeading">My Side Coding Projects</h1>
+         <p id="testP">During my coding journey, I have done a lot of side projects to determine what my passion is. Join me as you learn some of the things I have done.</p>
+         <section class="movies" id="movies">
+            <h2>How To Make The Best Movies</h2>
+            <p class="funParagraph">Here I created a couple hypothesis models to determine what makes the best movies.</p>
+            <section class="mpaa">
+               <p class="funParagraph">Below is a summary graph comparing movies and revenues. My hypothesis model determined that the MPAA rating of movies does significantly affect how much revenue a movie makes</p>
+               <img src="images/revenue_mpaa.png" alt="Revenue vs MPAA graph" id="revMPA">
+               <figcaption>Revenue vs MPAA graph</figcaption>
+            </section>
+            <section class="movieLength">
+               <p class="funParagraph">Another graph here showed that movies that are 2.5 hours long earn significantly more than movies that are 1.5 hours or less</p>
+               <img src="images/short_long.png" alt="Long vs Short movie graph" id="slmovies">
+               <figcaption>Long Movies vs Short Movies</figcaption>
+            </section>
+            <section class="genre">
+               <p class="funParagraph">Another graph here showed that genres of the movie affect significantly how much revenue a movie generates</p>
+               <img src="images/genres.png" alt="genres vs revenue graph" id="genres">
+               <figcaption>Movie Genres vs Revenue Graph</figcaption>
+            </section>
+         </section>
+         <section class="stroke" id='strokes'>
+            <h2>Stroke Prediction Dataset</h2>
+            <p class="funParagraph">This dataset was imported, cleaned, and visualized to create a machine learning model that can determine if  a patient is likely to get a stroke based on metabolic features provided. Below is a chart with accuracy comparisons of each model</p>
+            <img src="images/accuracy.png" alt="accuracy table">
+            <figcaption>Machine Learning Models Tables</figcaption>
+         </section>
+         <section class="personal" id="personal">
+            <h2>Personal Website - Karate and Mental Illness</h2>
+            <p class="funParagraph">I created a personal website that talked about mental illness and how martial arts helped me jump over some of those obstacles</p>
+            <p class="funParagraph">You can see my personal website by following this <a href=https://martial-arts-breaking-barriers-mental-illness.netlify.app>link</a></p>
+         </section>
+      </article>
+   </main>
+   <footer>
+      <p class="funParagraph">See all my work on my <a href=https://github.com/ChastityB>Github</a></p>
+      <p class="funParagraph"> &copy; Chastity Benton</p>
+   </footer>
+</body>
 </html>
