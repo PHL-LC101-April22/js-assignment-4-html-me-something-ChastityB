@@ -1,1 +1,113 @@
-/* Write your CSS here! */
+/* Light theme */
+:root {
+    --text-color: black;
+    --background-color: #C3DBFB;
+    --background-coloring: #e66465;
+}
+ 
+/* Dark theme */
+[data-theme="dark"] {
+    --text-color: white;
+    --background-color: #696969;
+    --background-coloring: black;
+}
+/* dark mode switch */
+.switch{
+    display: flex;
+    float: right;
+    align-items: center;
+}
+.theme{
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    width: 50px;
+}
+.theme input{
+    display: none;
+}
+.slider.circle{
+    border-radius: 30px;
+}
+.slider{
+    background: black;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+.slider.circle:before{
+    border-radius: 50px;
+}
+.slider:before{
+    background: blue;
+    bottom: 4px;
+    content: "";
+    height: 18px; 
+    left: 4px; 
+    position: absolute;
+    transition: 0.5s; 
+    width: 18px;
+}
+em{
+    margin-left: 10px;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+input:checked+.slider {
+    background: white;
+}
+ 
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 8px;
+    display: block;
+}
+#mainHeading{
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text-color);
+    background: red;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+li{
+    float: none;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+#revMPA, #slmovies, #genres {
+    background: white;
+}
+figcaption{
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#testP {
+    color: green;
+}
+
+.funParagraph {
+    color: green;
+}
